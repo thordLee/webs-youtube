@@ -9,7 +9,7 @@ const Developer = () => {
         <Main 
             title = "추천 개발자"
             description="추천개발자 채널안내입니다.">
-            <section id='developer'>
+            <section id='developerPage' >
                 <h2>😮 추천 개발자 소개합니다.</h2>
                 <div className="developer__inner">
                     {developerText.map((developer, key) => (
