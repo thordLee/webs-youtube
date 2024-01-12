@@ -15,6 +15,7 @@ const Search = () => {
 
 
     console.log(searchID);
+    console.log(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=30&q=${searchID}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`);
     useEffect(()=>{
         setVideos([]);
         fetchVideos(searchID);
@@ -58,6 +59,7 @@ const Search = () => {
             title = "유투브 검색"
             description="유튜브 검색 결과 페이지입니다.">
             <section id='searchPage' className={searchPageClass}>
+                <h2>😛 <em>{searchID}</em> 검색 결과</h2>
                 <div className="video__inner search">
                     <VideoSearch videos={videos}/>
                 </div>

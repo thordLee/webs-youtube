@@ -24,8 +24,8 @@ import { youtubeText } from '../data/youtube';
 const Home = () => {
     return (
         <Main 
-            title = "웹스토리보이 유튜브"
-            description="웹스토리보이 유튜버 사이트에 오신 것을 환영합니다.">
+            title = "(주)디딤유 유튜브"
+            description="(주)디딤유 유튜버 사이트에 오신 것을 환영합니다.">
             <Today videos={todayText} id="today" />
             <Developer videos={developerText} title="😮 추천 개발자를 소개합니다." id="developer" />
             <VideoSlider videos={webdText} title="😮 웹디자인기능사 준비는 이걸로!" id="webd" />
